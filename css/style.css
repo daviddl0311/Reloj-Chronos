@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: system-ui;
+    background-color: #171210;
+}
+section {
+    min-height: 100vh;
+}
+
+.center {
+    display: grid;
+    place-content: center;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.flex-column {
+    flex-direction: column;
+}
+.gap {
+    gap: 1rem;
+}
+.gap2 {
+    gap: 2px;
+}
+.gap3 {
+    gap: .2rem;
+}
+.gap4 {
+    gap: 2rem;
+}
+.gap5 {
+    gap: .5rem;
+}
+
+.container {
+    width: clamp(300px, 80vw, 400px);
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    background-color: #2e2e2d;
+    border: .4rem solid #363636;
+}
+.reloj {
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    background-color: #1d1b1b;
+    border-style: dashed;
+    box-shadow: 0px 0px 20px rgb(18, 180, 32);
+}
+.title, .sub-title {
+    text-transform: uppercase;
+}
+.title {
+    font-size: clamp(13px, 3vw, 15px);
+    color: rgb(255, 145, 0);
+}
+.sub-title {
+    font-size: clamp(8px, 3vw, 10px);
+    color: rgb(126, 126, 126);
+}
+.light > div > p {
+    font-size: clamp(10px, 3vw, 12px);
+    color: rgb(126, 126, 126);
+    list-style: none;
+}
+.model {
+    color: rgb(126, 126, 126);
+    font-size: clamp(10px, 3vw, 12px);
+}
+.justify {
+    justify-content: space-between;
+}
+.grid-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+.circle1,.circle2 {
+    font-size: 8px;
+}
+.circle1 {
+    color: rgb(255, 145, 0);
+    text-shadow:
+        0 0 7px rgb(255, 145, 0),
+        0 0 14px rgb(255, 145, 0),
+        0 0 21px rgb(255, 145, 0);
+}
+.circle2 {
+    color: rgb(7, 230, 25);
+    text-shadow:
+        0 0 7px rgb(7, 230, 25),
+        0 0 14px rgb(7, 230, 25),
+        0 0 21px rgb(7, 230, 25);
+}
+
+#hour {
+    font-family: 'alarm clock', sans-serif;
+    font-size: 70px;
+    color: rgb(0, 253, 21);
+    text-shadow:
+        0 0 7px rgb(21, 87, 26),
+        0 0 14px rgb(0, 253, 21),
+        0 0 21px rgb(0, 253, 21);
+}
+#day {
+    color: rgb(255, 145, 0);
+    font-weight: bold;
+}
+#date {
+    color: rgb(5, 211, 22);
+}
