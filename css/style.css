@@ -107,7 +107,7 @@ section {
 
 #hour {
     font-family: 'alarm clock', sans-serif;
-    font-size: clamp(40px, 8vw, 70px);
+    font-size: clamp(45px, 8vw, 70px);
     color: rgb(0, 253, 21);
     text-shadow:
         0 0 7px rgb(21, 87, 26),
@@ -115,8 +115,9 @@ section {
         0 0 21px rgb(0, 253, 21);
 }
 #day {
-    color: rgb(255, 145, 0);
     font-weight: bold;
+    color: rgb(255, 145, 0);
+    font-size: clamp(14px, 3vw, 17px);
 }
 #date {
     color: rgb(5, 211, 22);
