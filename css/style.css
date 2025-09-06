@@ -16,6 +16,9 @@ section {
     display: grid;
     place-content: center;
 }
+.center-align {
+    text-align: center;
+}
 .flex {
     display: flex;
 }
@@ -40,9 +43,12 @@ section {
 .gap5 {
     gap: .5rem;
 }
+.gap6 {
+    gap: 1.5rem;
+}
 
 .container {
-    width: clamp(300px, 80vw, 400px);
+    width: clamp(260px, 50vw, 400px);
     padding: 1.5rem 2rem;
     border-radius: 20px;
     background-color: #2e2e2d;
@@ -101,7 +107,7 @@ section {
 
 #hour {
     font-family: 'alarm clock', sans-serif;
-    font-size: 70px;
+    font-size: clamp(40px, 8vw, 70px);
     color: rgb(0, 253, 21);
     text-shadow:
         0 0 7px rgb(21, 87, 26),
@@ -114,4 +120,5 @@ section {
 }
 #date {
     color: rgb(5, 211, 22);
+    font-size: clamp(14px, 3vw, 17px);
 }
